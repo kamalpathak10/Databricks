@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_dlt_dab_demo_pipeline:
+      name: dlt_DAB_demo_pipeline
+      libraries:
+        - glob:
+            include: ../../src/notebooks/dlt_dab_demo
+      schema: ${resources.schemas.bronze_schema.name}
+      continuous: false
+      development: true
+      channel: CURRENT
+      catalog: ${resources.schemas.bronze_schema.catalog_name}
+      serverless: true
+      root_path: ../../src/notebooks/

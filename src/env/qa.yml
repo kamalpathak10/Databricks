@@ -1,0 +1,7 @@
+targets:
+  qa:
+    #permissions:
+    #  - group_name: DBT_CLOUD_USER
+    #    level: CAN_RUN
+    #  - group_name: DBT_CLOUD_USER
+    #    level: CAN_VIEW

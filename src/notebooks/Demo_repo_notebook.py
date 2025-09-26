@@ -1,6 +1,11 @@
 # Databricks notebook source
-spark.range(10)
+df = spark.range(10)
+
 
 # COMMAND ----------
 
 #This is the change
+
+# COMMAND ----------
+
+display(df)

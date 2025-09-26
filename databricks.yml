@@ -1,0 +1,27 @@
+bundle:
+  name: DABDemo
+
+
+include:
+  - src/*.yml
+  - src/env/*.yml
+  - resources/jobs/*.yml
+  - resources/pipelines/*.yml
+  - resources/schemas/*.yml
+  
+
+#permissions:
+#  - group_name: DBT_CLOUD_USER
+#    level: CAN_MANAGE
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-9744ca0a-3bd1.cloud.databricks.com/
+
+  qa:
+    default: false
+    workspace:
+      host: https://dbc-9744ca0a-3bd1.cloud.databricks.com/
